@@ -1,0 +1,149 @@
+/* --- OSNOVNE NASTAVITVE --- */
+html { box-sizing: border-box; overflow-x: hidden; } /* Padding ne poveča širine elementa, Prepreči vodoravni drsnik (levo-desno) */
+*, *:before, *:after { box-sizing: inherit; }   /* To pravilo prenesi na vse elemente */
+body { margin: 0; padding: 0; }
+html, body {
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* --- TIPOGRAFIJA --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.ps-jumbo { font-size: 64px!important; }
+.ps-large { font-size: 18px!important; }
+.ps-center { text-align: center!important; }
+.ps-wide { letter-spacing: 4px; }
+.ps-text-white { color: #fff!important; }
+.ps-text-shadow { text-shadow: 2px 2px 8px #000; }
+
+/* --- GRID & RAZMIKI --- */
+.ps-container { padding: 0.01em 16px; }
+.ps-padding { padding: 8px 16px!important; }
+.ps-padding-xl { padding: 32px!important; }
+.ps-padding-xxl { padding: 64px 16px!important; }
+.ps-padding-large { padding: 12px 24px!important; }
+.ps-margin-top { margin-top: 16px!important; }
+.ps-margin-top-xl { margin-top: 64px!important; }
+
+.ps-row { display: flex; flex-wrap: wrap; margin-left: -8px; margin-right: -8px; }
+.ps-col-4, .ps-quarter { padding: 0 8px; flex: 0 0 25%; max-width: 25%; margin-bottom: 16px; }
+.ps-third { padding: 0 8px; flex: 0 0 33.3333%; max-width: 33.3333%; margin-bottom: 16px; }
+
+@media (max-width: 600px) {
+    .ps-col-4, .ps-quarter, .ps-third { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* --- NAVIGACIJA --- */
+.ps-top { position: fixed; width: 100%; z-index: 100; top: 0; }
+.ps-bar { width: 100%; overflow: hidden; background-color: #000; color: #fff; }
+.ps-bar-item { padding: 8px 16px; float: left; width: auto; border: none; display: block; outline: 0; text-decoration: none; color: inherit; }
+.ps-bar-item:hover { background-color: #ccc; color: #000; }
+.ps-right { float: right!important; }
+
+
+@media (max-width: 992px) {
+    .ps-hide-large { display: block!important; }
+    .ps-hide-medium { display: none!important; }
+}
+@media (max-width: 600px) {
+    .ps-hide-small { display: none!important; }
+    .ps-bar-item.ps-right { display: none; }
+}
+
+/* --- HERO SEKCIJA (Header) --- */
+.ps-bgimg {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/ozadje.jpeg');
+    background-color: #000;
+    min-height: 100vh;
+}
+.ps-display-container { position: relative; }
+.ps-display-left {
+    position: absolute;
+    top: 50%; left: 0%;
+    transform: translate(0%,-50%); /* Potegne element gor za pol njegove višine */
+    padding: 24px;
+}
+
+/* --- FIX: HERO PORAVNAVA --- */
+.ps-hero-flex-wrapper {
+    display: flex;
+    align-items: flex-end; /* poskrbi da sta slika in tekst na dnu */
+    flex-wrap: nowrap;     /* Prepreči da bi slika skočila v novo vrsto */
+}
+
+/* Prilagodljiv naslov (nadomešča dvojni tekst) */
+.ps-responsive-title {
+    margin: 0;
+    line-height: 0.9; /* Stisne tekst, da slika ne izgleda, kot da visi */
+    font-size: 64px;
+    font-weight: 400;
+}
+
+/* Ikona desno od naslova */
+.ps-hero-icon-right {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-bottom: 5px; 
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    .ps-responsive-title {
+        font-size: 36px; 
+    }
+    .ps-hero-icon-right {
+        width: 30px;     
+        height: 30px;
+        margin-bottom: 2px;
+    }
+}
+
+/* --- ELEMENTI --- */
+img { vertical-align: middle; border-style: none; max-width: 100%; height: auto; }
+.ps-card { box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); }
+.ps-img-hover:hover { opacity: 0.8; cursor: pointer; transition: 0.3s; }
+
+
+
+/* --- OSTALE SEKCIJE --- */
+.ps-bg-light-blue { background-color: #f5f7fa; }
+.ps-box {
+    background-color: #fff; padding: 24px; border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); text-align: center;
+    height: 100%; transition: transform 0.3s;
+}
+.ps-box:hover { transform: translateY(-5px); }
+.ps-box i { color: #00439c; margin-bottom: 15px; }
+
+.ps-input { padding: 8px; display: block; border: none; border-bottom: 1px solid #ccc; width: 100%; margin-bottom: 10px; }
+.ps-narrow { max-width: 600px; margin: auto; }
+
+.ps-button {
+    border: none; display: inline-block; 
+    padding: 8px 16px;
+    text-decoration: none; 
+    color: inherit; background-color: inherit;
+    text-align: center;
+    cursor: pointer; 
+}
+.ps-button:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); }
+.ps-block { display: block; width: 100%; }
+
+.ps-blue { color: #fff!important; background-color: #00439c!important; }
+.ps-blue:hover { background-color: #00337a!important; }
+.ps-black { color: #fff!important; background-color: #000!important; }
+.ps-light-grey { color: #000!important; background-color: #f1f1f1!important; }
+.ps-dark-grey { color: #fff!important; background-color: #1f1f1f!important; }
+
+.ps-footer { padding: 32px; background-color: #f1f1f1; text-align: center; }
+

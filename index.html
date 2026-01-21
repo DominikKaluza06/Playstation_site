@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<title>PlayStation Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+<div class="ps-top">
+  <div class="ps-bar ps-black ps-card" id="myNavbar">
+    <a href="#home" class="ps-bar-item ps-button ps-wide">PLAYSTATION</a>
+
+    <div class="ps-right ps-hide-small">
+      <a href="#about" class="ps-bar-item ps-button">O NAS</a>
+      <a href="#games" class="ps-bar-item ps-button">IGRE</a>
+      <a href="#pricing" class="ps-bar-item ps-button">NAROČNINE</a>
+      <a href="#contact" class="ps-bar-item ps-button">KONTAKT</a>
+    </div>
+    </a>
+  </div>
+</div>
+
+<nav>
+  <a href="#about" onclick="ps_close()" class="ps-bar-item ps-button">O NAS</a>
+  <a href="#games" onclick="ps_close()" class="ps-bar-item ps-button">IGRE</a>
+  <a href="#pricing" onclick="ps_close()" class="ps-bar-item ps-button">NAROČNINE</a>
+  <a href="#contact" onclick="ps_close()" class="ps-bar-item ps-button">KONTAKT</a>
+</nav>
+
+<header class="ps-bgimg ps-display-container" id="home">
+  <div class="ps-display-left ps-text-white ps-padding-xl ps-text-shadow">
+    
+    <div class="ps-hero-flex-wrapper">
+      <h1 class="ps-responsive-title">Welcome to PlayStation</h1>
+      
+      <canvas id="logoCanvas" width="50" height="50"></canvas>
+      
+    </div>
+
+    <a href="#games" class="ps-button ps-blue ps-padding-large ps-large" style="margin-top: 25px;">
+      Oglej si igre
+    </a>
+
+  </div>
+</header>
+
+<div class="ps-container ps-padding-xxl ps-bg-light-blue" id="about">
+  
+  <div class="ps-center">
+    
+    <div id="logo"></div>
+
+    <h3>O PLAYSTATION</h3>
+    <p class="ps-large">Moč, igre in skupnost</p>
+  </div>
+
+  <div class="ps-row ps-margin-top-xl">
+    <div class="ps-col-4 ps-padding">
+      <div class="ps-box">
+        <i class="fa fa-gamepad ps-jumbo"></i>
+        <p class="ps-large"><b>Igre</b></p>
+        <p>Ekskluzivni naslovi in legendarne franšize.</p>
+      </div>
+    </div>
+    <div class="ps-col-4 ps-padding">
+      <div class="ps-box">
+        <i class="fa fa-bolt ps-jumbo"></i>
+        <p class="ps-large"><b>Zmogljivost</b></p>
+        <p>Bliskovita hitrost nalaganja in huda grafika.</p>
+      </div>
+    </div>
+    <div class="ps-col-4 ps-padding">
+      <div class="ps-box">
+        <i class="fa fa-users ps-jumbo"></i>
+        <p class="ps-large"><b>Skupnost</b></p>
+        <p>Poveži se z milijoni igralcev po svetu.</p>
+      </div>
+    </div>
+    <div class="ps-col-4 ps-padding">
+      <div class="ps-box">
+        <i class="fa fa-headphones ps-jumbo"></i>
+        <p class="ps-large"><b>Doživetje</b></p>
+        <p>3D zvok in haptični odziv kontrolerja.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ps-container ps-light-grey ps-padding-xxl" id="games">
+  <h3 class="ps-center">PRILJUBLJENE IGRE</h3>
+  <p class="ps-center ps-large">Najbolj igrani PlayStation naslovi</p>
+
+  <div class="ps-row ps-margin-top-xl">
+    <div class="ps-col-4">
+      <img src="images/photo-1606318801954-d46d46d3360a.jpeg" class="ps-img-hover ps-card" alt="PlayStation Controller">
+    </div>
+    <div class="ps-col-4">
+      <img src="images/photo-1600861194942-f883de0dfe96.jpeg" class="ps-img-hover ps-card" alt="Gaming Setup">
+    </div>
+    <div class="ps-col-4">
+      <img src="images/slika3.jpeg" class="ps-img-hover ps-card" alt="Neon Gaming">
+    </div>
+    <div class="ps-col-4">
+      <img src="images/slika4.jpeg" class="ps-img-hover ps-card" alt="PlayStation 5">
+    </div>
+  </div>
+</div>
+
+<div class="ps-container ps-center ps-dark-grey ps-padding-xxl" id="pricing">
+  <h3>PLAYSTATION PLUS</h3>
+  <p class="ps-large">Izberi naročnino po svojem stilu igranja</p>
+
+  <div class="ps-row ps-margin-top-xl">
+    <div class="ps-third ps-card">
+      <h3 class="ps-black">Essential</h3>
+      <p>Online igranje</p>
+      <p>Mesečne igre</p>
+      <h2>€9.99</h2>
+    </div>
+    <div class="ps-third ps-card ps-blue">
+      <h3>Extra</h3>
+      <p>Katalog iger</p>
+      <p>Ekskluzive</p>
+      <h2>€14.99</h2>
+    </div>
+    <div class="ps-third ps-card">
+      <h3 class="ps-black">Premium</h3>
+      <p>Retro igre</p>
+      <p>Cloud gaming</p>
+      <h2>€17.99</h2>
+    </div>
+  </div>
+</div>
+
+<div class="ps-container ps-light-grey ps-padding-xxl" id="contact">
+  <h3 class="ps-center">KONTAKT</h3>
+  <p class="ps-center ps-large">Piši nam – z veseljem pomagamo</p>
+
+  <div class="ps-narrow">
+    <form class="ps-form">
+      <input class="ps-input" type="text" placeholder="Ime" required>
+      <input class="ps-input" type="text" placeholder="Email" required>
+      <input class="ps-input" type="text" placeholder="Sporočilo" required>
+      <button class="ps-button ps-blue ps-block ps-margin-top" type="button">POŠLJI</button>
+    </form>
+  </div>
+</div>
+
+<footer class="ps-footer">
+  <p>PlayStation Fan Site • Neuradna stran</p>
+</footer>
+
+<script src="images/logo.js"></script>
+
+<script>
+    document.getElementById("logo").innerHTML = logoSVG;
+</script>
+
+<script src="js/canvas.js"></script>
+
+</body>
+</html>
