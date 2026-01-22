@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ps-row { display: flex; flex-wrap: wrap; margin-left: -8px; margin-right: -8px; }
 .ps-col-4, .ps-quarter { padding: 0 8px; flex: 0 0 25%; max-width: 25%; margin-bottom: 16px; }
-.ps-third { padding: 0 8px; flex: 0 0 33.3333%; max-width: 33.3333%; margin-bottom: 16px; }
+.ps-third { padding: 0 8px; flex: 0 0 33%; max-width: 33%; margin-bottom: 16px; }
 
 @media (max-width: 600px) {
     .ps-col-4, .ps-quarter, .ps-third { flex: 0 0 100%; max-width: 100%; }
