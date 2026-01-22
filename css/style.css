@@ -1,11 +1,13 @@
 /* --- OSNOVNE NASTAVITVE --- */
 html { box-sizing: border-box; overflow-x: hidden; } /* Padding ne poveča širine elementa, Prepreči vodoravni drsnik (levo-desno) */
 *, *:before, *:after { box-sizing: inherit; }   /* To pravilo prenesi na vse elemente */
-body { margin: 0; padding: 0; overflow-y: auto; scrollbar-width: none; -ms-overflow-style: none;}
+body { margin: 0; padding: 0; overflow-y: auto; }
 html, body {
     font-family: "Raleway", sans-serif;
     font-size: 15px;
     line-height: 1.5;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     
 }
 
