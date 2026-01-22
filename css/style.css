@@ -137,7 +137,8 @@ img { vertical-align: middle; border-style: none; max-width: 100%; height: auto;
     text-decoration: none; 
     color: inherit; background-color: inherit;
     text-align: center;
-    cursor: pointer; 
+    cursor: pointer;
+    border-radius: 5px;
 }
 .ps-button:hover { box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); }
 .ps-block { display: block; width: 100%; }
