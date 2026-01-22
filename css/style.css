@@ -1,5 +1,5 @@
 /* --- OSNOVNE NASTAVITVE --- */
-html { box-sizing: border-box; overflow-x: hidden; } /* Padding ne poveča širine elementa, Prepreči vodoravni drsnik (levo-desno) */
+html { box-sizing: border-box; overflow-x: hidden; overflow-y: hidden; } /* Padding ne poveča širine elementa, Prepreči vodoravni drsnik (levo-desno) */
 *, *:before, *:after { box-sizing: inherit; }   /* To pravilo prenesi na vse elemente */
 body { margin: 0; padding: 0; }
 html, body {
